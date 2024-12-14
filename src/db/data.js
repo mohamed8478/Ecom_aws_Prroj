@@ -1,5 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
-
+import React from 'react';
 const data = [
   {
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
