@@ -18,3 +18,6 @@ module.exports = {
   coverageDirectory: "coverage",
   testPathIgnorePatterns: ["<rootDir>/node_modules/"]
 };
+
+
+

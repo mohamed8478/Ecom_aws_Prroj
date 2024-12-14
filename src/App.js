@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from "react";
+import React ,{ useState } from "react";
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import products from "./db/data";
