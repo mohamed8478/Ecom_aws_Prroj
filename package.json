@@ -1,12 +1,11 @@
 {
-  "name": "ecommerce",
+  "name": "ecommtest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icon": "^1.0.0",
     "react-icons": "^5.4.0",
     "react-scripts": "5.0.1"
   },
@@ -35,6 +34,7 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0"
   }
 }

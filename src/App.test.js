@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import App from '../App';
+import App from './App';
 
 // Mocking the components and data
-jest.mock('../Navigation/Nav', () => () => <div>Navigation Component</div>);
-jest.mock('../Products/Products', () => ({ result }) => (
+jest.mock('./Navigation/Nav', () => () => <div>Navigation Component</div>);
+jest.mock('./Products/Products', () => ({ result }) => (
   <div>
     {result.map((product, index) => (
       <div key={index} data-testid="product">
@@ -13,16 +13,16 @@ jest.mock('../Products/Products', () => ({ result }) => (
     ))}
   </div>
 ));
-jest.mock('../Recommended/Recommended', () => () => <div>Recommended Component</div>);
-jest.mock('../Sidebar/Sidebar', () => ({ handleChange }) => (
+jest.mock('./Recommended/Recommended', () => () => <div>Recommended Component</div>);
+jest.mock('./Sidebar/Sidebar', () => ({ handleChange }) => (
   <button onClick={() => handleChange({ target: { value: 'category1' } })}>Filter</button>
 ));
-jest.mock('../db/data', () => [
+jest.mock('./db/data', () => [
   { title: 'Product 1', category: 'category1' },
   { title: 'Product 2', category: 'category2' },
   // Add more products as needed
 ]);
-jest.mock('../components/Card', () => ({ img, title, star, reviews, prevPrice, newPrice }) => (
+jest.mock('./components/Card', () => ({ img, title, star, reviews, prevPrice, newPrice }) => (
   <div>{title}</div>
 ));
 
